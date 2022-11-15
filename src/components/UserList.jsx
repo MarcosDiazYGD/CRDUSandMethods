@@ -4,13 +4,13 @@ const UserList = ({ listedUsers, selectedUser, deleteUser }) => {
   return (
     <div>
       <h1 className="userList-title">Created Users</h1>
+      <div className="component-UserList">
       {listedUsers.length === 0 ? (
         <div>
           <h1 className="userList-usersEmpty">Empty users list</h1>
         </div>
       ) : (
         listedUsers.map((user) => (
-          <div className="component-UserList">
             <div key={user.id} className="cardUser">
               <div className="cardData">
                 <h2 className="cardData-name">
@@ -30,9 +30,9 @@ const UserList = ({ listedUsers, selectedUser, deleteUser }) => {
                 ></i>
               </div>
             </div>
-          </div>
         ))
       )}
+          </div>
     </div>
   );
 };
