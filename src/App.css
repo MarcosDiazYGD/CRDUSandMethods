@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to left bottom, #140537, #440e53, #7a0d67, #b30671, #eb1271);
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+  padding: 2rem;
+}
+
+.component-UserForm,
+.component-UserList {
+  margin: 0 auto;
+}
+
+.component-UserForm {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.component-UserList {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: auto;
+  gap: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: 6rem;
+}
+
+.form div {
+  display: flex;
+}
+
+.form input {
+  width: 100%;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  height: 30px;
+  border: transparent;
+  background-color: rgba(184, 184, 184, 0.429);
+  outline: none;
+  transition: all .3s;
+  color: #3a1444;
+  font-size: 18px;
+  padding: 1rem;
+}
+color
+.form input:focus {
+  background-color: white;
+  border-bottom: 3px solid #eb1271;
+  color: #eb1271;
+}
+
+.fa-eye,
+.fa-eye-slash {
+  margin-left: .5rem;
+  min-width: 40px;
+  color: #b30671;
+}
+
+.form i {
+  font-size: 30px;
+  color: #b30671;
+}
+
+.form button {
+  margin: 0 auto;
+  width: 50%;
+  border-radius: 20px;
+  height: 30px;
+  transition: all .3s;
+  border: none;
+}
+
+.useForm-title {
+  text-align: center;
+  color: #b30671;
+  font-size: 40px;
+}
+
+.cardUser {
+  padding: 2rem ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: whitesmoke;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+.cardData {
+  align-self: center;
+}
+
+.cardData-name {
+  color: #140537;
+  font-size: 30px;
+}
+
+.cardData-email { 
+  color: #7a0d67;
+}
+
+.cardData-birthday {
+  color: #440e53;
+}
+
+.cardIcons {
+  align-self: flex-end;
+  display: flex;
+  gap: 1rem;
+  font-size: 22px;
+}
+
+.cardIcons .fa-pencil {
+  color: rgb(90, 90, 90);
+}
+
+.cardIcons .fa-trash {
+  color: rgb(220, 65, 65);
+}
+
+.userList-title{
+  text-align: center;
+  font-size: 40px;
+  color: #140537;
+  margin-bottom: 5rem;
+}
+
+.useForm-containerButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.useForm-buttonSubmit:hover {
+  background-color: #eb1271;
+  color: #3a1444;
+}
+
+.useForm-buttonClear:hover {
+  background-color: #3a1444;
+  color: #eb1271;
+}
+
+.userList-usersEmpty{
+  text-align: center;
+}
